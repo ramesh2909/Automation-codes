@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration strict = "true">
+
+<Appenders>
+<Appender type = "console" name = "con">
+<Layout type = "PatternLayout" pattern = "%d{HH:mm:ss.SSS} 
+[%t] %-7level %logger{100} -%m%n"></Layout>
+</Appender>
+
+<Appender type = "File" name = "fi" fileName = 
+"C:\\Users\\RAMESH\\Downloads\\automation data files\\logger.log">
+<Layout type = "PatternLayout" pattern = "%d{HH:mm:ss.SSS} [%t] %-7level %logger {100} -%m%n">
+</Layout>
+
+</Appender>
+
+</Appenders>
+
+<Loggers>
+
+<Root level = "all">
+
+<AppenderRef ref = "fi"></AppenderRef>
+<!--   <AppenderRef ref = "fi"></AppenderRef> it prints in text file -->
+<!--   <AppenderRef ref = "con"></AppenderRef> it prints in console --> 
+</Root>
+
+</Loggers>
+
+</Configuration>
