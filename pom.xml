@@ -21,7 +21,7 @@
         <version>3.5.2</version>
         <configuration>
           <suiteXmlFiles>
-            <suiteXmlFile>ParellelTestExceution.xml</suiteXmlFile>
+            <suiteXmlFile>crossbrowsertest.xml</suiteXmlFile>
           </suiteXmlFiles>
         </configuration>
       </plugin>
@@ -29,7 +29,6 @@
       </plugins>
     </pluginManagement>
   </build>
-  
 
   <dependencies>
   <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->

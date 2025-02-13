@@ -9,8 +9,8 @@
   </classes>
   </test> <!-- Test -->
   
-  <test  name="FireFox Test">
-  <parameter name="browser" value="firefox"></parameter>
+  <test  name="Edge Test">
+  <parameter name="browser" value="edge"></parameter>
   <classes>
   <class name = "CrossBrawser.CrossBrawser">
  </class>

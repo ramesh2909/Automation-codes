@@ -10,6 +10,7 @@ import org.openqa.selenium.Platform;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.remote.DesiredCapabilities;
@@ -23,27 +24,33 @@ public class CrossBrawser {
 
 	
 		// TODO Auto-generated method stub
-		DesiredCapabilities dc;
-		RemoteWebDriver w;
-//		WebDriver w;
+//	for grid
+//		DesiredCapabilities dc;
+//		RemoteWebDriver w;
+	
+		WebDriver w;
 		@Parameters("browser")
 		@Test
 		
 		public void flipkart(String browserValue) throws Exception {
 			switch (browserValue) {
 			case "chrome":
-				dc = new DesiredCapabilities();
-				dc.setPlatform(Platform.WINDOWS);
-				dc.setBrowserName("chrome");
-				w = new RemoteWebDriver(dc);
-//				w = new ChromeDriver();
+//				for grid
+//				dc = new DesiredCapabilities();
+//				dc.setPlatform(Platform.WINDOWS);
+//				dc.setBrowserName("chrome");
+//				w = new RemoteWebDriver(dc);
+				
+				w = new ChromeDriver();
 				break;
-			case "firefox":
-				dc = new DesiredCapabilities();
-				dc.setPlatform(Platform.WINDOWS);
-				dc.setBrowserName("MicrosoftEdge");
-				w = new RemoteWebDriver(dc);
-//				w = new FirefoxDriver();
+			case "edge":
+//				for grid
+//				dc = new DesiredCapabilities();
+//				dc.setPlatform(Platform.WINDOWS);
+//				dc.setBrowserName("MicrosoftEdge");
+//				w = new RemoteWebDriver(dc);
+				
+				w = new EdgeDriver();
 				break;
 
 			default:
